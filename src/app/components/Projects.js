@@ -9,7 +9,7 @@ import Proj6 from "../images/proj6.jpg"
 import Image from "next/image";
 
 const projects = [
-  { id: 1, image: Proj1, alt: "Project 1" },
+  { id: 1, image: Proj1, alt: "Project 1" src:"https://pixarc.vercel.app/" },
   { id: 2, image: Proj2, alt: "Project 2" },
   { id: 3, image: Proj3, alt: "Project 3" },
   { id: 4, image: Proj4, alt: "Project 4" },
@@ -26,12 +26,13 @@ export default function Projects() {
         <div className="grid grid-cols-1 sm:px-20 sm:grid-cols-2 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div key={project.id} className="overflow-visible rounded-lg hover:shadow-gray-500 hover:shadow-xl hover:scale-105 transition bg-gray-400">
-              <Image
-                src={project.image}
-                alt={project.alt}
-                width={350}
-                className="object-cover w-full  rounded-lg"
-              />
+              <a href={project.src}>
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  width={350}
+                  className="object-cover w-full  rounded-lg cursor-pointer"/>
+              </a>
             </div>
           ))}
         </div>
