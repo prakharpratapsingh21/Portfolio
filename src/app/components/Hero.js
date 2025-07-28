@@ -52,13 +52,7 @@ export default function Hero() {
           <p className="text-gray-600  mb-6">
             I create visually appealing and user-friendly websites.
           </p>
-          {/* <a
-            href="#contact"
-            className="inline-block text-black px-8 border-blue-700 border-[1.5px] py-2 rounded-xl shadow hover:bg-blue-700 hover:text-white transition"
-          >
-            Hire Me
-          </a> */}
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center  lg:justify-start justify-center gap-6">
             <div className="relative inline-block group">
               {/* Glowing Background */}
               <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500  to-pink-500 
