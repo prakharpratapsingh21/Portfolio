@@ -11,7 +11,7 @@ import Image from "next/image";
 const projects = [
   { id: 1, image: Proj1, alt: "Project 1", src:"https://pixarc.vercel.app/" },
   { id: 2, image: Proj2, alt: "Project 2" },
-  { id: 3, image: Proj3, alt: "Project 3" },
+  { id: 3, image: Proj3, alt: "Project 3", src:"https://exoape-website-clone-eight.vercel.app/" },
   { id: 4, image: Proj4, alt: "Project 4", src:"https://refokus-clone-gamma.vercel.app/" },
   { id: 5, image: Proj5, alt: "Project 5" },
   { id: 6, image:Proj6, alt: "Project 6" },
@@ -40,3 +40,4 @@ export default function Projects() {
     </section>
   );
 }
+
