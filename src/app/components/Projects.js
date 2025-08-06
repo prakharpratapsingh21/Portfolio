@@ -23,7 +23,7 @@ export default function Projects() {
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-12 text-gray-800">Projects</h2>
 
-        <div className="grid grid-cols-1 sm:px-20 sm:grid-cols-2 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:px-16 sm:grid-cols-2 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div key={project.id} className="overflow-visible rounded-lg hover:shadow-gray-500 hover:shadow-xl hover:scale-105 transition bg-gray-400">
               <a href={project.src}>
@@ -40,6 +40,7 @@ export default function Projects() {
     </section>
   );
 }
+
 
 
 
